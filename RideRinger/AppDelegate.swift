@@ -8,15 +8,23 @@
 
 import UIKit
 import CoreData
+import UserNotifications
+import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate{
 
-    var window: UIWindow?
-
+    private let window: UIWindow = UIWindow(frame: UIScreen.main.bounds)
+    private let locationManager: CLLocationManager = CLLocationManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        configWindow()
+        configUNCenter(with: application)
+        
+        
+        
         return true
     }
 
@@ -87,6 +95,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+    
+    func configWindow() {
+        let mainVC = ViewController()
+        
+        window?.rootViewController = mainVC
+        window?.makeKeyAndVisible()
+    }
+    
+    func configUNCenter(with application: UIApplication) {
+         UNUserNotificationCenter.current().getNotificationSettings { (settings) in
+            let status = settings.authorizationStatus
+            
+            if status == .notDetermined {
+                let options : UNAuthorizationOptions = [.alert, .badge, .sound]
+                UNUserNotificationCenter.current().requestAuthorization(options: options, completionHandler: { (granted, error) in
+                    if granted {
+                        application.registerForRemoteNotifications()
+                    }
+                })
+            }
+            else {
+                
+            }
+        }
+        UNUserNotificationCenter.current().delegate = self
     }
 
 }
