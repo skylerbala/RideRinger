@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A5699196A7CCCCF4C0D7B45 /* Pods_RideRinger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA421F0C823C8218A8E64A55 /* Pods_RideRinger.framework */; };
+		309A6DA198B333949469A268 /* Pods_RideRingerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0344FDE43488EEDA0E257DEB /* Pods_RideRingerUITests.framework */; };
+		4583E18D4DF39790E20D3F82 /* Pods_RideRingerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1843F4010488651E0438005C /* Pods_RideRingerTests.framework */; };
+		9F4EFEA82128EE9F0047CA94 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4EFEA72128EE9F0047CA94 /* Utilities.swift */; };
+		9F4EFEAC21290C780047CA94 /* firetruck.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9F4EFEAB21290C770047CA94 /* firetruck.wav */; };
+		9F4EFEAE2129218D0047CA94 /* WakePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4EFEAD2129218D0047CA94 /* WakePoint.swift */; };
+		9F4EFEB021292A1B0047CA94 /* AddWakePointVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4EFEAF21292A1B0047CA94 /* AddWakePointVC.swift */; };
+		9F4EFEB5212B99CD0047CA94 /* RangeRadiusProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4EFEB1212B99CC0047CA94 /* RangeRadiusProperties.swift */; };
+		9F4EFEB6212B99CD0047CA94 /* WildGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4EFEB2212B99CC0047CA94 /* WildGestureRecognizer.swift */; };
+		9F4EFEB7212B99CD0047CA94 /* RangeRadiusMKMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4EFEB3212B99CD0047CA94 /* RangeRadiusMKMapView.swift */; };
+		9F4EFEB8212B99CD0047CA94 /* CustomMKRadiusOverlayRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4EFEB4212B99CD0047CA94 /* CustomMKRadiusOverlayRenderer.swift */; };
 		9FB926BE2127F65400E4FB63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB926BD2127F65400E4FB63 /* AppDelegate.swift */; };
-		9FB926C02127F65400E4FB63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB926BF2127F65400E4FB63 /* ViewController.swift */; };
+		9FB926C02127F65400E4FB63 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB926BF2127F65400E4FB63 /* MapVC.swift */; };
 		9FB926C32127F65400E4FB63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB926C12127F65400E4FB63 /* Main.storyboard */; };
 		9FB926C62127F65400E4FB63 /* RideRinger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FB926C42127F65400E4FB63 /* RideRinger.xcdatamodeld */; };
 		9FB926C82127F65400E4FB63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FB926C72127F65400E4FB63 /* Assets.xcassets */; };
@@ -17,8 +28,6 @@
 		9FB926E12127F65400E4FB63 /* RideRingerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB926E02127F65400E4FB63 /* RideRingerUITests.swift */; };
 		9FB926F02127FB1C00E4FB63 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB926EF2127FB1C00E4FB63 /* MapKit.framework */; };
 		9FB926F22128048600E4FB63 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB926F12128048600E4FB63 /* CoreLocation.framework */; };
-		9FB926F42128A75700E4FB63 /* GeoNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB926F32128A75700E4FB63 /* GeoNotification.swift */; };
-		9FB926F62128B57800E4FB63 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB926F52128B57800E4FB63 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +48,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0344FDE43488EEDA0E257DEB /* Pods_RideRingerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RideRingerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E4E3B2E82810C4AEF180E42 /* Pods-RideRinger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideRinger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RideRinger/Pods-RideRinger.debug.xcconfig"; sourceTree = "<group>"; };
+		1843F4010488651E0438005C /* Pods_RideRingerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RideRingerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF2F9F244939DF7173F782D /* Pods-RideRingerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideRingerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RideRingerTests/Pods-RideRingerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B47AA70113F4B3D1B9E0A32 /* Pods-RideRingerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideRingerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RideRingerUITests/Pods-RideRingerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5CCCF7BB5062E8604DB39AE8 /* Pods-RideRinger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideRinger.release.xcconfig"; path = "Pods/Target Support Files/Pods-RideRinger/Pods-RideRinger.release.xcconfig"; sourceTree = "<group>"; };
+		9F4EFEA72128EE9F0047CA94 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		9F4EFEAB21290C770047CA94 /* firetruck.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = firetruck.wav; sourceTree = "<group>"; };
+		9F4EFEAD2129218D0047CA94 /* WakePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakePoint.swift; sourceTree = "<group>"; };
+		9F4EFEAF21292A1B0047CA94 /* AddWakePointVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWakePointVC.swift; sourceTree = "<group>"; };
+		9F4EFEB1212B99CC0047CA94 /* RangeRadiusProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeRadiusProperties.swift; sourceTree = "<group>"; };
+		9F4EFEB2212B99CC0047CA94 /* WildGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WildGestureRecognizer.swift; sourceTree = "<group>"; };
+		9F4EFEB3212B99CD0047CA94 /* RangeRadiusMKMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeRadiusMKMapView.swift; sourceTree = "<group>"; };
+		9F4EFEB4212B99CD0047CA94 /* CustomMKRadiusOverlayRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMKRadiusOverlayRenderer.swift; sourceTree = "<group>"; };
 		9FB926BA2127F65400E4FB63 /* RideRinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideRinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB926BD2127F65400E4FB63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FB926BF2127F65400E4FB63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FB926BF2127F65400E4FB63 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		9FB926C22127F65400E4FB63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FB926C52127F65400E4FB63 /* RideRinger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RideRinger.xcdatamodel; sourceTree = "<group>"; };
 		9FB926C72127F65400E4FB63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,8 +78,9 @@
 		9FB926E22127F65400E4FB63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FB926EF2127FB1C00E4FB63 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9FB926F12128048600E4FB63 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		9FB926F32128A75700E4FB63 /* GeoNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoNotification.swift; sourceTree = "<group>"; };
-		9FB926F52128B57800E4FB63 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		AA421F0C823C8218A8E64A55 /* Pods_RideRinger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RideRinger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC9BB30544B3CC515F6C4FE5 /* Pods-RideRingerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideRingerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RideRingerUITests/Pods-RideRingerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED518B4E6B53B349C07AE982 /* Pods-RideRingerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideRingerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RideRingerTests/Pods-RideRingerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +90,7 @@
 			files = (
 				9FB926F22128048600E4FB63 /* CoreLocation.framework in Frameworks */,
 				9FB926F02127FB1C00E4FB63 /* MapKit.framework in Frameworks */,
+				0A5699196A7CCCCF4C0D7B45 /* Pods_RideRinger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4583E18D4DF39790E20D3F82 /* Pods_RideRingerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +106,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309A6DA198B333949469A268 /* Pods_RideRingerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B3489497D80FBF91FEDC275 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E4E3B2E82810C4AEF180E42 /* Pods-RideRinger.debug.xcconfig */,
+				5CCCF7BB5062E8604DB39AE8 /* Pods-RideRinger.release.xcconfig */,
+				1AF2F9F244939DF7173F782D /* Pods-RideRingerTests.debug.xcconfig */,
+				ED518B4E6B53B349C07AE982 /* Pods-RideRingerTests.release.xcconfig */,
+				AC9BB30544B3CC515F6C4FE5 /* Pods-RideRingerUITests.debug.xcconfig */,
+				3B47AA70113F4B3D1B9E0A32 /* Pods-RideRingerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9FB926B12127F65400E4FB63 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +134,7 @@
 				9FB926DF2127F65400E4FB63 /* RideRingerUITests */,
 				9FB926BB2127F65400E4FB63 /* Products */,
 				9FB926EE2127FB1C00E4FB63 /* Frameworks */,
+				3B3489497D80FBF91FEDC275 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,14 +152,20 @@
 			isa = PBXGroup;
 			children = (
 				9FB926BD2127F65400E4FB63 /* AppDelegate.swift */,
-				9FB926BF2127F65400E4FB63 /* ViewController.swift */,
+				9F4EFEB4212B99CD0047CA94 /* CustomMKRadiusOverlayRenderer.swift */,
+				9F4EFEB3212B99CD0047CA94 /* RangeRadiusMKMapView.swift */,
+				9F4EFEB1212B99CC0047CA94 /* RangeRadiusProperties.swift */,
+				9F4EFEB2212B99CC0047CA94 /* WildGestureRecognizer.swift */,
+				9FB926BF2127F65400E4FB63 /* MapVC.swift */,
+				9F4EFEAF21292A1B0047CA94 /* AddWakePointVC.swift */,
 				9FB926C12127F65400E4FB63 /* Main.storyboard */,
 				9FB926C72127F65400E4FB63 /* Assets.xcassets */,
 				9FB926C92127F65400E4FB63 /* LaunchScreen.storyboard */,
 				9FB926CC2127F65400E4FB63 /* Info.plist */,
 				9FB926C42127F65400E4FB63 /* RideRinger.xcdatamodeld */,
-				9FB926F32128A75700E4FB63 /* GeoNotification.swift */,
-				9FB926F52128B57800E4FB63 /* Config.swift */,
+				9F4EFEA72128EE9F0047CA94 /* Utilities.swift */,
+				9F4EFEAB21290C770047CA94 /* firetruck.wav */,
+				9F4EFEAD2129218D0047CA94 /* WakePoint.swift */,
 			);
 			path = RideRinger;
 			sourceTree = "<group>";
@@ -146,6 +193,9 @@
 			children = (
 				9FB926F12128048600E4FB63 /* CoreLocation.framework */,
 				9FB926EF2127FB1C00E4FB63 /* MapKit.framework */,
+				AA421F0C823C8218A8E64A55 /* Pods_RideRinger.framework */,
+				1843F4010488651E0438005C /* Pods_RideRingerTests.framework */,
+				0344FDE43488EEDA0E257DEB /* Pods_RideRingerUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FB926E52127F65400E4FB63 /* Build configuration list for PBXNativeTarget "RideRinger" */;
 			buildPhases = (
+				4FE991B02B50A83F76C206AB /* [CP] Check Pods Manifest.lock */,
 				9FB926B62127F65400E4FB63 /* Sources */,
 				9FB926B72127F65400E4FB63 /* Frameworks */,
 				9FB926B82127F65400E4FB63 /* Resources */,
+				511DD8959A3B7B162A32B84F /* [CP] Embed Pods Frameworks */,
+				A13A650DF880CFED518EB05F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FB926E82127F65400E4FB63 /* Build configuration list for PBXNativeTarget "RideRingerTests" */;
 			buildPhases = (
+				90E507B701A6011447592CBA /* [CP] Check Pods Manifest.lock */,
 				9FB926CD2127F65400E4FB63 /* Sources */,
 				9FB926CE2127F65400E4FB63 /* Frameworks */,
 				9FB926CF2127F65400E4FB63 /* Resources */,
+				9064534E1A3EFA6F65B35D7A /* [CP] Embed Pods Frameworks */,
+				930FEA557E843BAA573FC75E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FB926EB2127F65400E4FB63 /* Build configuration list for PBXNativeTarget "RideRingerUITests" */;
 			buildPhases = (
+				012779F67E7387490D048D53 /* [CP] Check Pods Manifest.lock */,
 				9FB926D82127F65400E4FB63 /* Sources */,
 				9FB926D92127F65400E4FB63 /* Frameworks */,
 				9FB926DA2127F65400E4FB63 /* Resources */,
+				FDFBBFA6D50B62BAA5CC6314 /* [CP] Embed Pods Frameworks */,
+				37B547E97A8B3E3A39E53889 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +326,7 @@
 			files = (
 				9FB926CB2127F65400E4FB63 /* LaunchScreen.storyboard in Resources */,
 				9FB926C82127F65400E4FB63 /* Assets.xcassets in Resources */,
+				9F4EFEAC21290C780047CA94 /* firetruck.wav in Resources */,
 				9FB926C32127F65400E4FB63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,15 +347,170 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		012779F67E7387490D048D53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RideRingerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37B547E97A8B3E3A39E53889 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RideRingerUITests/Pods-RideRingerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FE991B02B50A83F76C206AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RideRinger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		511DD8959A3B7B162A32B84F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RideRinger/Pods-RideRinger-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RideRinger/Pods-RideRinger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9064534E1A3EFA6F65B35D7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RideRingerTests/Pods-RideRingerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90E507B701A6011447592CBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RideRingerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		930FEA557E843BAA573FC75E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RideRingerTests/Pods-RideRingerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A13A650DF880CFED518EB05F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RideRinger/Pods-RideRinger-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDFBBFA6D50B62BAA5CC6314 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RideRingerUITests/Pods-RideRingerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9FB926B62127F65400E4FB63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9FB926C62127F65400E4FB63 /* RideRinger.xcdatamodeld in Sources */,
-				9FB926C02127F65400E4FB63 /* ViewController.swift in Sources */,
-				9FB926F62128B57800E4FB63 /* Config.swift in Sources */,
-				9FB926F42128A75700E4FB63 /* GeoNotification.swift in Sources */,
+				9F4EFEB021292A1B0047CA94 /* AddWakePointVC.swift in Sources */,
+				9FB926C02127F65400E4FB63 /* MapVC.swift in Sources */,
+				9F4EFEAE2129218D0047CA94 /* WakePoint.swift in Sources */,
+				9F4EFEB8212B99CD0047CA94 /* CustomMKRadiusOverlayRenderer.swift in Sources */,
+				9F4EFEA82128EE9F0047CA94 /* Utilities.swift in Sources */,
+				9F4EFEB6212B99CD0047CA94 /* WildGestureRecognizer.swift in Sources */,
+				9F4EFEB7212B99CD0047CA94 /* RangeRadiusMKMapView.swift in Sources */,
+				9F4EFEB5212B99CD0047CA94 /* RangeRadiusProperties.swift in Sources */,
 				9FB926BE2127F65400E4FB63 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,14 +675,17 @@
 		};
 		9FB926E62127F65400E4FB63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E4E3B2E82810C4AEF180E42 /* Pods-RideRinger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BX4CBW4TS6;
 				INFOPLIST_FILE = RideRinger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SkylerBala.RideRinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -475,14 +693,17 @@
 		};
 		9FB926E72127F65400E4FB63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CCCF7BB5062E8604DB39AE8 /* Pods-RideRinger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BX4CBW4TS6;
 				INFOPLIST_FILE = RideRinger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SkylerBala.RideRinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -490,6 +711,7 @@
 		};
 		9FB926E92127F65400E4FB63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AF2F9F244939DF7173F782D /* Pods-RideRingerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,6 +729,7 @@
 		};
 		9FB926EA2127F65400E4FB63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED518B4E6B53B349C07AE982 /* Pods-RideRingerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,6 +747,7 @@
 		};
 		9FB926EC2127F65400E4FB63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC9BB30544B3CC515F6C4FE5 /* Pods-RideRingerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +764,7 @@
 		};
 		9FB926ED2127F65400E4FB63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B47AA70113F4B3D1B9E0A32 /* Pods-RideRingerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

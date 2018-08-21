@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.pushNotification(with:):ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.locationManager(_:didStartMonitoringFor:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "locationManager.monitoredRegions">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MapVC.addAnnotation(sender:):MapVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "locationManager.">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

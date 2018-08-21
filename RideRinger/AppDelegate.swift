@@ -9,21 +9,19 @@
 import UIKit
 import CoreData
 import UserNotifications
-import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate{
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    private let window: UIWindow = UIWindow(frame: UIScreen.main.bounds)
-    private let locationManager: CLLocationManager = CLLocationManager()
+    var window: UIWindow?
+    var notificationCenter: UNUserNotificationCenter?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         configWindow()
-        configUNCenter(with: application)
         
-        
+        configureUNCenter(with: application)
         
         return true
     }
@@ -97,20 +95,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
     }
     
-    func configWindow() {
-        let mainVC = ViewController()
-        
-        window?.rootViewController = mainVC
-        window?.makeKeyAndVisible()
+    private func configWindow() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        if let window = window {
+            let mapVC = MapVC()
+            window.rootViewController = UINavigationController(rootViewController: mapVC)
+            window.makeKeyAndVisible()
+        }
     }
-    
-    func configUNCenter(with application: UIApplication) {
-         UNUserNotificationCenter.current().getNotificationSettings { (settings) in
+}
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    private func configureUNCenter(with application: UIApplication) {
+        notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter?.delegate = self
+        notificationCenter?.getNotificationSettings { (settings) in
             let status = settings.authorizationStatus
             
             if status == .notDetermined {
                 let options : UNAuthorizationOptions = [.alert, .badge, .sound]
-                UNUserNotificationCenter.current().requestAuthorization(options: options, completionHandler: { (granted, error) in
+                self.notificationCenter?.requestAuthorization(options: options, completionHandler: { (granted, error) in
                     if granted {
                         application.registerForRemoteNotifications()
                     }
@@ -120,8 +124,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                 
             }
         }
-        UNUserNotificationCenter.current().delegate = self
     }
-
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler(.alert)
+    }
 }
 
